@@ -76,7 +76,10 @@
                                 Back to List
                             </a>
                             <a class="btn btn-success text-white">
-                                <i class="bi bi-cart-plus"></i> Add to Cart (Price @Model.Price.ToString("c"))
+                                <i class="bi bi-cart-plus" 
+                                   asp-controller="Orders"
+                                   asp-action="AddItemToShoppingCart"
+                                   asp-route-id="@Model.Id"></i> Add to Cart (Price @Model.Price.ToString("c"))
                             </a>
                         </p>
                     </div>
