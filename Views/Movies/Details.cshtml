@@ -75,7 +75,7 @@
                             <a class="btn btn-outline-primary float-right" asp-action="Index">
                                 Back to List
                             </a>
-                            <a class="btn btn-success text-white">
+                            <a class="btn btn-success text-white @((DateTime.Now > Model.EndDate) ? "disabled" : "")"
                                 <i class="bi bi-cart-plus" 
                                    asp-controller="Orders"
                                    asp-action="AddItemToShoppingCart"
